@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="barcode-card">
+          <h3 class="barcode-card__title">
+            <i class="fa-solid fa-barcode"></i> 
+            <span>Barcode Generator</span>
+          </h3>
+          <input type="text" class="barcode-card__input" placeholder="Enter text or url" />
+          <button class="barcode-card__btn">Generate</button>
+          <div class="barcode-card__body">
+            <svg id="barcode"></svg>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>

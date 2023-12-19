@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #292b30;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@property --k {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.text {
+  --k: 0;
+  background: linear-gradient(
+    90deg,
+    hsl(calc(var(--k) * 1turn), 95%, 65%),
+    hsl(calc(var(--k) * 1turn + 90deg), 95%, 65%)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font: 700 clamp(0.875em, 7.25vw, 4em) arial black, sans-serif;
+  text-transform: uppercase;
+  animation: anime 4s linear infinite;
+}
+
+@keyframes anime {
+  to {
+    --k: 1;
+  }
+}

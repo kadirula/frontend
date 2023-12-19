@@ -8,13 +8,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 @property --k {
   syntax: "<number>";
   initial-value: 0;
   inherits: false;
 }
-
 body {
   background-color: var(--background);
   font-family: "Poppins", sans-serif;
